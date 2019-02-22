@@ -6,7 +6,15 @@
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_A webpage for a company who wants their webpage to mirror their in-person presence. Attract people that would want to work in that environment. This webpage is meant to be luxurious and high-end but at the same time not be super intimidating to people who may wanna join. This company is meant for anyone and everyone who may want to work for them. The target user is ANYONE who may be interested in working for this company_
+
+## Users Stories
+### Andy
+_Needs: A place to be able to work to spread his creativity to the world_
+
+_Main Points: Cant find a place to work with fellow people in the industry who want to help him grow_
+
+_How we can serve: We offer a safe place for anyone in many fields to come and work. Our community of people are ones who love to help each other_
 
 ## Setup/Installation Requirements
 
