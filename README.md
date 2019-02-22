@@ -16,6 +16,16 @@ _Main Points: Cant find a place to work with fellow people in the industry who w
 
 _How we can serve: We offer a safe place for anyone in many fields to come and work. Our community of people are ones who love to help each other_
 
+## Screenshots
+mobile sketch up for webpage
+![](screenshots/../img/mobile.jpg)
+
+tablet sketch up for webpage
+![](screenshots/../img/tablet.jpg)
+
+desktop sketch up for webpage
+![](screenshots/../img/desktop.jpg)
+
 ## Setup/Installation Requirements
 
 * _No Setup/Installation Required_
