@@ -26,6 +26,16 @@ tablet sketch up for webpage
 desktop sketch up for webpage
 ![](screenshots/../img/desktop.jpg)
 
+Mobile Wireframe
+
+![](screenshots/../img/MobileCapture.JPG)
+
+Tablet Wireframe
+![](screenshots/../img/TabletCapture.JPG)
+
+Desktop Wireframe
+![](screenshots/../img/DesktopCapture.JPG)
+
 ## Setup/Installation Requirements
 
 * _No Setup/Installation Required_
