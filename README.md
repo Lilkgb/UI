@@ -1,6 +1,6 @@
-# _{Application Name}_
+# _XO Workshop Cafe_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _{Brief description of application}, 2/25/2019_
 
 #### By _**Ryan McLean**_
 
@@ -53,7 +53,7 @@ _Please contact Ryan McLean at mcleanrs@comcast.net._
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_Used Sketch for wireframing and prototyping._
 
 ### License
 
