@@ -31,9 +31,11 @@ Mobile Wireframe
 ![](screenshots/../img/MobileCapture.JPG)
 
 Tablet Wireframe
+
 ![](screenshots/../img/TabletCapture.JPG)
 
 Desktop Wireframe
+
 ![](screenshots/../img/DesktopCapture.JPG)
 
 ## Setup/Installation Requirements
