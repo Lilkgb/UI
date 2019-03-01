@@ -59,6 +59,15 @@ body {
     .search:hover {
       cursor: pointer;
     }
+    @include mQ(1000px, 775px) {
+      grid-template-columns: 1fr 1fr;
+      .menuLogo {
+        display: none;
+      }
+      .logo {
+        justify-self: start;
+      }
+    }
   }
   .menu {
     background-color: $darkOrng;
@@ -68,7 +77,11 @@ body {
     p {
       justify-self: center;
       font-size: 35px;
-      text-shadow: $shadow;
+    }
+    @include mQ(775px) {
+      p {
+        font-size: 20px;
+      }
     }
   }
 }

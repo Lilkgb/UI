@@ -47,6 +47,17 @@ body {
 .headerMenu .header .search:hover {
   cursor: pointer;
 }
+@media screen and (max-width: 1000px) and (min-width: 775px) {
+  .headerMenu .header {
+    grid-template-columns: 1fr 1fr;
+  }
+  .headerMenu .header .menuLogo {
+    display: none;
+  }
+  .headerMenu .header .logo {
+    justify-self: start;
+  }
+}
 .headerMenu .menu {
   background-color: #C1796F;
   display: grid;
@@ -56,7 +67,11 @@ body {
 .headerMenu .menu p {
   justify-self: center;
   font-size: 35px;
-  text-shadow: 2px 2px black;
+}
+@media screen and (max-width: 775px) {
+  .headerMenu .menu p {
+    font-size: 20px;
+  }
 }
 
 .title {

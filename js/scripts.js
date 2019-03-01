@@ -1,5 +1,15 @@
+var x = window.matchMedia("(min-width: 775px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
+
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+    $(".menu").show();
+  } else {
+    $(".menu").hide();
+  }
+}
 $(document).ready(function() {
-  $(".menu").hide();
   $(".menuLogo").click(function() {
     $(".menu").slideToggle("slow");
   });
