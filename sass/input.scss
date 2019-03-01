@@ -2,9 +2,16 @@ $teal: #6B9591;
 $darkOrng: #C1796F;
 $shadow: 2px 2px black;
 
-@mixin mQ($arg){
-  @media screen and (max-width: $arg){
-    @content;
+@mixin mQ($arg...){
+  @if length($arg) == 1 {
+    @media screen and (max-width: nth($arg, 1)){
+      @content;
+    }
+  }
+  @if length($arg) == 2 {
+    @media screen and (max-width: nth($arg, 1)) and (min-width: nth($arg, 2)) {
+      @content
+    }
   }
 }
 body {
