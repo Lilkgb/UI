@@ -1,5 +1,10 @@
 $teal: #6B9591;
 
+@mixin mQ($arg){
+  @media screen and (max-width: $arg){
+    @content;
+  }
+}
 body {
   background-color: $teal;
 }
