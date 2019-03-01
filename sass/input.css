@@ -86,6 +86,7 @@ body {
 }
 .headerMenu .menu p:hover {
   cursor: pointer;
+  text-decoration: underline;
 }
 @media screen and (max-width: 775px) {
   .headerMenu .menu {
@@ -109,11 +110,10 @@ body {
 
 .title {
   display: grid;
-  margin-bottom: 10px;
 }
 .title .img {
   justify-self: center;
-  width: 100%;
+  width: 98%;
 }
 .title .slogan {
   font-size: 35px;
@@ -167,6 +167,30 @@ body {
   margin-left: 10px;
   color: white;
   text-shadow: 2px 2px black;
+}
+
+.footer {
+  background-color: lightgray;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr;
+}
+.footer p {
+  justify-self: center;
+}
+.footer .socialMedia {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  grid-column: 5;
+}
+.footer .socialMedia img {
+  height: 30px;
+}
+.footer p:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=input.css.map */
