@@ -71,16 +71,31 @@ body {
   }
   .menu {
     background-color: $darkOrng;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-around;
     padding: 5px;
+    .menuItems {
+      display: flex;
+    }
     p {
       justify-self: center;
       font-size: 35px;
     }
     @include mQ(775px) {
+      display: none;
+      .menuItems {
+        width: 100%;
+        justify-content: space-around;
+      }
       p {
         font-size: 20px;
+      }
+    }
+    @include mQ(1000px, 775px) {
+      .menuItems {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
       }
     }
   }

@@ -60,17 +60,34 @@ body {
 }
 .headerMenu .menu {
   background-color: #C1796F;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-around;
   padding: 5px;
+}
+.headerMenu .menu .menuItems {
+  display: flex;
 }
 .headerMenu .menu p {
   justify-self: center;
   font-size: 35px;
 }
 @media screen and (max-width: 775px) {
+  .headerMenu .menu {
+    display: none;
+  }
+  .headerMenu .menu .menuItems {
+    width: 100%;
+    justify-content: space-around;
+  }
   .headerMenu .menu p {
     font-size: 20px;
+  }
+}
+@media screen and (max-width: 1000px) and (min-width: 775px) {
+  .headerMenu .menu .menuItems {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
   }
 }
 
