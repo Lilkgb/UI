@@ -21,7 +21,7 @@ body {
   background-color: lightgray;
 }
 .headerMenu .header img {
-  height: 100px;
+  height: 80px;
 }
 .headerMenu .header .menuLogo {
   justify-self: start;
@@ -37,17 +37,22 @@ body {
 }
 .headerMenu .header .searchOption {
   justify-self: end;
+  display: flex;
+  align-items: center;
 }
 .headerMenu .header .searchOption input {
   display: none;
-  background-color: lightgray;
-  height: 60px;
-  font-size: 20px;
+  font-size: 15px;
+  height: 40px;
+  border-radius: 5px;
+}
+.headerMenu .header .searchOption input:focus {
+  outline-color: #C1796F;
 }
 .headerMenu .header .search:hover {
   cursor: pointer;
 }
-@media screen and (max-width: 1000px) and (min-width: 775px) {
+@media screen and (max-width: 2000px) and (min-width: 775px) {
   .headerMenu .header {
     grid-template-columns: 1fr 1fr;
   }
@@ -56,6 +61,14 @@ body {
   }
   .headerMenu .header .logo {
     justify-self: start;
+  }
+  .headerMenu .header .searchOption input {
+    display: flex;
+    font-size: 20px;
+    height: 30px;
+  }
+  .headerMenu .header img {
+    height: 60px;
   }
 }
 .headerMenu .menu {
@@ -69,7 +82,10 @@ body {
 }
 .headerMenu .menu p {
   justify-self: center;
-  font-size: 35px;
+  font-size: 30px;
+}
+.headerMenu .menu p:hover {
+  cursor: pointer;
 }
 @media screen and (max-width: 775px) {
   .headerMenu .menu {
@@ -83,7 +99,7 @@ body {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 1000px) and (min-width: 775px) {
+@media screen and (max-width: 2000px) and (min-width: 775px) {
   .headerMenu .menu .menuItems {
     width: 100%;
     display: flex;

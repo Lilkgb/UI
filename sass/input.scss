@@ -33,7 +33,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     background-color: lightgray;
     img {
-      height: 100px;
+      height: 80px;
     }
     .menuLogo {
       justify-self: start;
@@ -49,23 +49,38 @@ body {
     }
     .searchOption {
       justify-self: end;
+      display: flex;
+      align-items: center;
       input {
         display: none;
-        background-color: lightgray;
-        height: 60px;
-        font-size: 20px;
+        font-size: 15px;
+        height: 40px;
+        border-radius: 5px;
+      }
+      input:focus {
+        outline-color: $darkOrng;
       }
     }
     .search:hover {
       cursor: pointer;
     }
-    @include mQ(1000px, 775px) {
+    @include mQ(2000px, 775px) {
       grid-template-columns: 1fr 1fr;
       .menuLogo {
         display: none;
       }
       .logo {
         justify-self: start;
+      }
+      .searchOption {
+        input {
+          display: flex;
+          font-size: 20px;
+          height: 30px;
+        }
+      }
+      img {
+        height: 60px;
       }
     }
   }
@@ -79,7 +94,10 @@ body {
     }
     p {
       justify-self: center;
-      font-size: 35px;
+      font-size: 30px;
+    }
+    p:hover {
+      cursor: pointer;
     }
     @include mQ(775px) {
       display: none;
@@ -91,7 +109,7 @@ body {
         font-size: 20px;
       }
     }
-    @include mQ(1000px, 775px) {
+    @include mQ(2000px, 775px) {
       .menuItems {
         width: 100%;
         display: flex;

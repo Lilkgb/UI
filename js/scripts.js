@@ -5,8 +5,10 @@ x.addListener(myFunction) // Attach listener function on state changes
 function myFunction(x) {
   if (x.matches) { // If media query matches
     $(".menu").show();
+    $(".searchInput").show();
   } else {
     $(".menu").hide();
+    $(".searchInput").hide();
   }
 }
 $(document).ready(function() {
