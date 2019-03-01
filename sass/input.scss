@@ -3,3 +3,13 @@ $teal: #6B9591;
 body {
   background-color: $teal;
 }
+
+.header {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: lightgray;
+  img {
+    height: 100px;
+  }
+}
