@@ -8,28 +8,43 @@ $teal: #6B9591;
 body {
   background-color: $teal;
 }
-
-.header {
+.all {
   display: grid;
-  padding: 10px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  background-color: lightgray;
-  img {
-    height: 100px;
+  .header {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: lightgray;
+    img {
+      height: 100px;
+    }
+    .menuLogo {
+      justify-self: center;
+    }
+    .menu:hover {
+      cursor: pointer;
+    }
+    .logo {
+      grid-column-start: 4;
+    }
+    .logo:hover {
+      cursor: pointer;
+    }
+    .search {
+      grid-column-start: 7;
+    }
+    .search:hover {
+      cursor: pointer;
+    }
   }
-  .menu:hover {
-    cursor: pointer;
-  }
-  .logo {
-    grid-column-start: 4;
-  }
-  .logo:hover {
-    cursor: pointer;
-  }
-  .search {
-    grid-column-start: 7;
-  }
-  .search:hover {
-    cursor: pointer;
+  .menu {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 5px;
+    p {
+      justify-self: center;
+      font-size: 20px;
+    }
   }
 }

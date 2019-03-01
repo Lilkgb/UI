@@ -2,29 +2,45 @@ body {
   background-color: #6B9591;
 }
 
-.header {
+.all {
+  display: grid;
+}
+.all .header {
   display: grid;
   padding: 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   background-color: lightgray;
 }
-.header img {
+.all .header img {
   height: 100px;
 }
-.header .menu:hover {
+.all .header .menuLogo {
+  justify-self: center;
+}
+.all .header .menu:hover {
   cursor: pointer;
 }
-.header .logo {
+.all .header .logo {
   grid-column-start: 4;
 }
-.header .logo:hover {
+.all .header .logo:hover {
   cursor: pointer;
 }
-.header .search {
+.all .header .search {
   grid-column-start: 7;
 }
-.header .search:hover {
+.all .header .search:hover {
   cursor: pointer;
+}
+.all .menu {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding: 5px;
+}
+.all .menu p {
+  justify-self: center;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=input.css.map */
