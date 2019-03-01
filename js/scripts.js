@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  $(".menu").hide();
   $(".menuLogo").click(function() {
     $(".menu").slideToggle("slow");
   });

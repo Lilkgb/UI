@@ -1,5 +1,6 @@
 $teal: #6B9591;
 $darkOrng: #C1796F;
+$shadow: 2px 2px black;
 
 @mixin mQ($arg){
   @media screen and (max-width: $arg){
@@ -8,6 +9,10 @@ $darkOrng: #C1796F;
 }
 body {
   background-color: $teal;
+}
+.all {
+  display: grid;
+  grid-gap: 10px;
 }
 .headerMenu {
   display: grid;
@@ -38,6 +43,7 @@ body {
     .searchOption {
       justify-self: end;
       input {
+        display: none;
         background-color: lightgray;
         height: 60px;
         font-size: 20px;
@@ -55,6 +61,7 @@ body {
     p {
       justify-self: center;
       font-size: 35px;
+      text-shadow: $shadow;
     }
   }
 }
@@ -71,6 +78,7 @@ body {
     color: white;
     justify-self: center;
     text-align: center;
+    text-shadow: $shadow;
   }
 }
 
@@ -111,4 +119,11 @@ body {
     height: auto;
     justify-self: center;
   }
+}
+
+.hours {
+  display: grid;
+  margin-left: 10px;
+  color: white;
+  text-shadow: 2px 2px black;
 }
