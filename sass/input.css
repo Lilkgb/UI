@@ -74,8 +74,10 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
-.slideshow .mySlides {
+.slideshow .hide {
   display: none;
+}
+.slideshow .mySlides {
   grid-column: 1/span 3;
   grid-row: 1/span 3;
 }
@@ -88,7 +90,6 @@ body {
   grid-column: 1;
   grid-row: 2;
   align-self: center;
-  padding: 10px;
   font-size: 20px;
 }
 .slideshow .button-right {
@@ -96,7 +97,6 @@ body {
   grid-row: 2;
   justify-self: end;
   align-self: center;
-  padding: 10px;
   font-size: 20px;
 }
 .slideshow img {

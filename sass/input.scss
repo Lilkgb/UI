@@ -80,8 +80,10 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  .mySlides {
+  .hide {
     display: none;
+  }
+  .mySlides {
     grid-column: 1 / span 3;
     grid-row: 1 / span 3;
   }
@@ -94,7 +96,6 @@ body {
     grid-column: 1;
     grid-row: 2;
     align-self: center;
-    padding: 10px;
     font-size: 20px;
   }
   .button-right {
@@ -102,7 +103,6 @@ body {
     grid-row: 2;
     justify-self: end;
     align-self: center;
-    padding: 10px;
     font-size: 20px;
   }
   img {
