@@ -5,7 +5,7 @@ body {
 .header {
   display: grid;
   padding: 10px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   background-color: lightgray;
 }
 .header img {
@@ -15,10 +15,16 @@ body {
   cursor: pointer;
 }
 .header .logo {
-  grid-column-start: 3;
+  grid-column-start: 4;
+}
+.header .logo:hover {
+  cursor: pointer;
 }
 .header .search {
-  grid-column-start: 5;
+  grid-column-start: 7;
+}
+.header .search:hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=input.css.map */

@@ -7,7 +7,7 @@ body {
 .header {
   display: grid;
   padding: 10px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   background-color: lightgray;
   img {
     height: 100px;
@@ -16,9 +16,15 @@ body {
     cursor: pointer;
   }
   .logo {
-    grid-column-start: 3;
+    grid-column-start: 4;
+  }
+  .logo:hover {
+    cursor: pointer;
   }
   .search {
-    grid-column-start: 5;
+    grid-column-start: 7;
+  }
+  .search:hover {
+    cursor: pointer;
   }
 }
