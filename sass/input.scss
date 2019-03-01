@@ -11,9 +11,10 @@ body {
 }
 .headerMenu {
   display: grid;
+  position: sticky;
+  top: 0px;
+  width: 100%;
   .header {
-    position: sticky;
-    top: 0;
     width: 100%;
     display: grid;
     padding: 10px;
@@ -69,12 +70,44 @@ body {
     font-size: 35px;
     color: white;
     justify-self: center;
+    text-align: center;
   }
 }
 
 .slideshow {
   width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  .mySlides {
+    display: none;
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 3;
+  }
+  button {
+    background-color: gray;
+    height: 50px;
+    width: 50px;
+  }
+  .button-left {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: center;
+    padding: 10px;
+    font-size: 20px;
+  }
+  .button-right {
+    grid-column: 3;
+    grid-row: 2;
+    justify-self: end;
+    align-self: center;
+    padding: 10px;
+    font-size: 20px;
+  }
   img {
     width: 100%;
+    height: auto;
+    justify-self: center;
   }
 }
