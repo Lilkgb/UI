@@ -5,11 +5,20 @@ body {
 .header {
   display: grid;
   padding: 10px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   background-color: lightgray;
 }
 .header img {
   height: 100px;
+}
+.header .menu:hover {
+  cursor: pointer;
+}
+.header .logo {
+  grid-column-start: 3;
+}
+.header .search {
+  grid-column-start: 5;
 }
 
 /*# sourceMappingURL=input.css.map */

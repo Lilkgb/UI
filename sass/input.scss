@@ -7,9 +7,18 @@ body {
 .header {
   display: grid;
   padding: 10px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   background-color: lightgray;
   img {
     height: 100px;
+  }
+  .menu:hover {
+    cursor: pointer;
+  }
+  .logo {
+    grid-column-start: 3;
+  }
+  .search {
+    grid-column-start: 5;
   }
 }
