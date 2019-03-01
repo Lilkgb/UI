@@ -8,39 +8,47 @@ body {
 .all .header {
   display: grid;
   padding: 10px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   background-color: lightgray;
 }
 .all .header img {
   height: 100px;
 }
 .all .header .menuLogo {
-  justify-self: center;
+  justify-self: start;
 }
-.all .header .menu:hover {
+.all .header .menuLogo:hover {
   cursor: pointer;
 }
 .all .header .logo {
-  grid-column-start: 4;
+  justify-self: center;
 }
 .all .header .logo:hover {
   cursor: pointer;
 }
-.all .header .search {
-  grid-column-start: 7;
+.all .header .searchOption {
+  justify-self: end;
+}
+.all .header .searchOption input {
+  background-color: lightgray;
+  height: 60px;
+  font-size: 20px;
 }
 .all .header .search:hover {
   cursor: pointer;
 }
 .all .menu {
-  background-color: white;
+  background-color: #C1796F;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   padding: 5px;
 }
 .all .menu p {
   justify-self: center;
-  font-size: 20px;
+  font-size: 35px;
+}
+.all .img {
+  justify-self: center;
 }
 
 /*# sourceMappingURL=input.css.map */
