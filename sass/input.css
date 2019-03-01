@@ -65,4 +65,11 @@ body {
   justify-self: center;
 }
 
+.slideshow {
+  width: 100%;
+}
+.slideshow img {
+  width: 100%;
+}
+
 /*# sourceMappingURL=input.css.map */
