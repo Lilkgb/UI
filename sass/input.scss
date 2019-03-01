@@ -9,9 +9,12 @@ $darkOrng: #C1796F;
 body {
   background-color: $teal;
 }
-.all {
+.headerMenu {
   display: grid;
   .header {
+    position: sticky;
+    top: 0;
+    width: 100%;
     display: grid;
     padding: 10px;
     grid-template-columns: 1fr 1fr 1fr;
@@ -53,7 +56,18 @@ body {
       font-size: 35px;
     }
   }
+}
+
+.title {
+  display: grid;
+  grid-gap: 10px;
   .img {
+    justify-self: center;
+    width: 100%;
+  }
+  .slogan {
+    font-size: 35px;
+    color: white;
     justify-self: center;
   }
 }

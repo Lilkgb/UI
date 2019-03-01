@@ -2,52 +2,66 @@ body {
   background-color: #6B9591;
 }
 
-.all {
+.headerMenu {
   display: grid;
 }
-.all .header {
+.headerMenu .header {
+  position: sticky;
+  top: 0;
+  width: 100%;
   display: grid;
   padding: 10px;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: lightgray;
 }
-.all .header img {
+.headerMenu .header img {
   height: 100px;
 }
-.all .header .menuLogo {
+.headerMenu .header .menuLogo {
   justify-self: start;
 }
-.all .header .menuLogo:hover {
+.headerMenu .header .menuLogo:hover {
   cursor: pointer;
 }
-.all .header .logo {
+.headerMenu .header .logo {
   justify-self: center;
 }
-.all .header .logo:hover {
+.headerMenu .header .logo:hover {
   cursor: pointer;
 }
-.all .header .searchOption {
+.headerMenu .header .searchOption {
   justify-self: end;
 }
-.all .header .searchOption input {
+.headerMenu .header .searchOption input {
   background-color: lightgray;
   height: 60px;
   font-size: 20px;
 }
-.all .header .search:hover {
+.headerMenu .header .search:hover {
   cursor: pointer;
 }
-.all .menu {
+.headerMenu .menu {
   background-color: #C1796F;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   padding: 5px;
 }
-.all .menu p {
+.headerMenu .menu p {
   justify-self: center;
   font-size: 35px;
 }
-.all .img {
+
+.title {
+  display: grid;
+  grid-gap: 10px;
+}
+.title .img {
+  justify-self: center;
+  width: 100%;
+}
+.title .slogan {
+  font-size: 35px;
+  color: white;
   justify-self: center;
 }
 
