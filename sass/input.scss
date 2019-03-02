@@ -26,6 +26,12 @@ body {
   position: sticky;
   top: 0px;
   width: 100%;
+  .darkLogo {
+    display: none;
+  }
+  .darkSearch {
+    display: none;
+  }
   .header {
     width: 100%;
     display: grid;
@@ -34,6 +40,9 @@ body {
     background-color: lightgray;
     img {
       height: 80px;
+    }
+    .desktop {
+      display: none;
     }
     .menuLogo {
       justify-self: start;
@@ -51,6 +60,8 @@ body {
       justify-self: end;
       display: flex;
       align-items: center;
+      grid-column: 3;
+      grid-row: 1;
       input {
         display: none;
         font-size: 15px;
@@ -64,9 +75,12 @@ body {
     .search:hover {
       cursor: pointer;
     }
-    @include mQ(2000px, 775px) {
+    @include mQ(1500px, 775px) {
       grid-template-columns: 1fr 1fr;
       .menuLogo {
+        display: none;
+      }
+      .desktop {
         display: none;
       }
       .logo {
@@ -81,6 +95,43 @@ body {
       }
       img {
         height: 60px;
+      }
+    }
+    @include mQ(3000px, 1500px) {
+      background-color: $darkOrng;
+      grid-template-columns: 100px 1fr 100px;
+      .desktop {
+        display: grid;
+        align-self: center;
+        justify-content: center;
+        font-size: 40px;
+      }
+      .menuDesktop {
+        display: flex;
+        justify-content: space-between;
+      }
+      img {
+        height: 50px;
+        align-self: center;
+      }
+      .desktop:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+      .menuLogo {
+        display: none;
+      }
+      .search {
+        display: none;
+      }
+      .darkSearch {
+        display: grid;
+      }
+      .logo {
+        display: none;
+      }
+      .darkLogo {
+        display: grid;
       }
     }
   }
@@ -110,12 +161,17 @@ body {
         font-size: 20px;
       }
     }
-    @include mQ(2000px, 775px) {
+    @include mQ(1500px, 775px) {
       .menuItems {
         width: 100%;
         display: flex;
         justify-content: space-around;
       }
+    }
+  }
+  @include mQ (3000px, 1500px) {
+    .menu {
+      display: none;
     }
   }
 }
@@ -208,7 +264,22 @@ body {
     cursor: pointer;
     text-decoration: underline;
   }
-  @include mQ(2000px, 775px) {
+  @include mQ(1500px, 775px) {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    p {
+      font-size: 25px;
+    }
+  }
+  @include mQ(3000px, 1500px) {
+    background-color: $darkOrng;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    p {
+      font-size: 40px;
+    }
+    .socialMedia {
+      img {
+        height: 50px;
+      }
+    }
   }
 }
