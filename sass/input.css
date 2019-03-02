@@ -88,7 +88,7 @@ body {
 @media screen and (max-width: 3000px) and (min-width: 1500px) {
   .headerMenu .header {
     background-color: #C1796F;
-    grid-template-columns: 100px 1fr 100px;
+    grid-template-columns: 100px 1fr 20px auto;
   }
   .headerMenu .header .desktop {
     display: grid;
@@ -111,7 +111,7 @@ body {
   .headerMenu .header .menuLogo {
     display: none;
   }
-  .headerMenu .header .search {
+  .headerMenu .header .lightSearch {
     display: none;
   }
   .headerMenu .header .darkSearch {
@@ -122,6 +122,9 @@ body {
   }
   .headerMenu .header .darkLogo {
     display: grid;
+  }
+  .headerMenu .header .searchOption {
+    grid-column: 4;
   }
 }
 .headerMenu .menu {
@@ -162,6 +165,9 @@ body {
 }
 @media screen and (max-width: 3000px) and (min-width: 1500px) {
   .headerMenu .menu {
+    display: none;
+  }
+  .headerMenu .menu .menuItems {
     display: none;
   }
 }

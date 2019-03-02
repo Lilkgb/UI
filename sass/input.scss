@@ -99,7 +99,7 @@ body {
     }
     @include mQ(3000px, 1500px) {
       background-color: $darkOrng;
-      grid-template-columns: 100px 1fr 100px;
+      grid-template-columns: 100px 1fr 20px auto;
       .desktop {
         display: grid;
         align-self: center;
@@ -121,7 +121,7 @@ body {
       .menuLogo {
         display: none;
       }
-      .search {
+      .lightSearch {
         display: none;
       }
       .darkSearch {
@@ -132,6 +132,9 @@ body {
       }
       .darkLogo {
         display: grid;
+      }
+      .searchOption {
+        grid-column: 4;
       }
     }
   }
@@ -172,6 +175,9 @@ body {
   @include mQ (3000px, 1500px) {
     .menu {
       display: none;
+      .menuItems {
+        display: none;
+      }
     }
   }
 }
