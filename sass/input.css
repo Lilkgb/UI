@@ -25,6 +25,7 @@ body {
   padding: 10px;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: lightgray;
+  border-bottom: 2px solid gray;
 }
 .headerMenu .header img {
   height: 80px;
@@ -132,6 +133,7 @@ body {
   display: flex;
   justify-content: space-around;
   padding: 5px;
+  border-bottom: 2px solid gray;
 }
 .headerMenu .menu .menuItems {
   display: flex;
@@ -166,6 +168,7 @@ body {
 @media screen and (max-width: 3000px) and (min-width: 1500px) {
   .headerMenu .menu {
     display: none;
+    border: none;
   }
   .headerMenu .menu .menuItems {
     display: none;
@@ -192,9 +195,15 @@ body {
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 100px auto 100px;
 }
 .slideshow .hide {
+  display: none;
+}
+.slideshow .leftBG {
+  display: none;
+}
+.slideshow .rightBG {
   display: none;
 }
 .slideshow .mySlides {
@@ -225,6 +234,31 @@ body {
   height: auto;
   justify-self: center;
 }
+@media screen and (max-width: 3000px) and (min-width: 1500px) {
+  .slideshow .leftBG {
+    height: 100%;
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: start;
+  }
+  .slideshow .rightBG {
+    height: 100%;
+    display: flex;
+    grid-column: 3;
+    grid-row: 2;
+    justify-self: end;
+  }
+  .slideshow .button-left {
+    justify-self: center;
+  }
+  .slideshow .button-right {
+    justify-self: center;
+  }
+  .slideshow img {
+    width: 71%;
+  }
+}
 
 .hours {
   display: grid;
@@ -234,11 +268,13 @@ body {
 }
 
 .footer {
+  padding-bottom: 10px;
   background-color: lightgray;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto 1fr;
+  border-top: 2px solid gray;
 }
 .footer p {
   justify-self: center;
@@ -253,7 +289,7 @@ body {
 .footer .socialMedia img {
   height: 30px;
 }
-@media screen and (max-width: 2000px) and (min-width: 775px) {
+@media screen and (max-width: 1500px) and (min-width: 775px) {
   .footer .socialMedia {
     grid-row: 2;
     grid-column: 5;
@@ -270,6 +306,9 @@ body {
   .footer p {
     font-size: 25px;
   }
+  .footer .socialMedia img {
+    height: 40px;
+  }
 }
 @media screen and (max-width: 3000px) and (min-width: 1500px) {
   .footer {
@@ -278,6 +317,10 @@ body {
   }
   .footer p {
     font-size: 40px;
+  }
+  .footer .socialMedia {
+    grid-column: 5;
+    grid-row: 2;
   }
   .footer .socialMedia img {
     height: 50px;
