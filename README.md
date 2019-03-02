@@ -1,6 +1,6 @@
 # _XO Workshop Cafe_
 
-#### _{Brief description of application}, 2/25/2019_
+#### _XO is a new company who needs a website that is inviting yet high end, 2/25/2019_
 
 #### By _**Ryan McLean**_
 
@@ -40,12 +40,15 @@ Desktop Wireframe
 
 ## Setup/Installation Requirements
 
-* _No Setup/Installation Required_
+* _You can get these files by going into your terminal or powershell and using "git clone https://github.com/Lilkgb/UI" and it will copy the files to your computer._
+* _Use any text editor of your choice to view the coding. I use Atom._
+* _When ready make your own repository and push to your github repository._
+* _Have Fun_
 
 
 ## Known Bugs
 
-_There are no known bugs._
+_If you are on desktop and go into mobile version and open the menu there then keep it open and resize the window to desktop version. It still shows the extra menu when it should be hidden._
 
 ## Support and contact details
 
@@ -53,7 +56,7 @@ _Please contact Ryan McLean at mcleanrs@comcast.net._
 
 ## Technologies Used
 
-_Used Sketch for wireframing and prototyping._
+_Used Sketch for wireframing and prototyping. Used atom for coding. Languages used: HTML, Javascript, Sass, Css._
 
 ### License
 
