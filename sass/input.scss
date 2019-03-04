@@ -13,6 +13,11 @@ $shadow: 2px 2px black;
       @content
     }
   }
+  @if length ($arg) == 3 {
+    @media screen and (max-width: nth($arg, 1)) and (min-width: nth($arg, 2)) and (-webkit-device-pixel-ratio: nth($arg, 3)) {
+      @content
+    }
+  }
 }
 body {
   background-color: $teal;
