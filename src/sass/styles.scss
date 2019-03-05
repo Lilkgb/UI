@@ -226,6 +226,9 @@ body {
     border: 1px solid $teal;
     height: 50px;
     width: 50px;
+    &:hover {
+      cursor: pointer;
+    }
   }
   .button-left {
     grid-column: 1;
