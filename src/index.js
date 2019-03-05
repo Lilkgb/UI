@@ -1,3 +1,4 @@
 console.log("hello");
 
-import './css/styles/css'
+import './sass/styles.scss';
+import './js/scripts.js';
