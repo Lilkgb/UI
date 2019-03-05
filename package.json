@@ -1,0 +1,23 @@
+{
+  "name": "ui",
+  "version": "1.0.0",
+  "description": "_A webpage for a company who wants their webpage to mirror their in-person presence. Attract people that would want to work in that environment. This webpage is meant to be luxurious and high-end but at the same time not be super intimidating to people who may wanna join. This company is meant for anyone and everyone who may want to work for them. The target user is ANYONE who may be interested in working for this company_",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lilkgb/UI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lilkgb/UI/issues"
+  },
+  "homepage": "https://github.com/Lilkgb/UI#readme",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
