@@ -85,25 +85,25 @@ _Our employees always want to help in anyway they can_
 
 ## Screenshots
 mobile sketch up for webpage
-![](screenshots/../img/mobile.jpg)
+![](screenshots/../src/img/mobile.jpg)
 
 tablet sketch up for webpage
-![](screenshots/../img/tablet.jpg)
+![](screenshots/../src/img/tablet.jpg)
 
 desktop sketch up for webpage
-![](screenshots/../img/desktop.jpg)
+![](screenshots/../src/img/desktop.jpg)
 
 Mobile Wireframe
 
-![](screenshots/../img/MobileCapture.JPG)
+![](screenshots/../src/img/MobileCapture.JPG)
 
 Tablet Wireframe
 
-![](screenshots/../img/TabletCapture.JPG)
+![](screenshots/../src/img/TabletCapture.JPG)
 
 Desktop Wireframe
 
-![](screenshots/../img/DesktopCapture.JPG)
+![](screenshots/../src/img/DesktopCapture.JPG)
 
 ## Setup/Installation Requirements
 
