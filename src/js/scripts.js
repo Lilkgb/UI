@@ -1,11 +1,11 @@
 import $ from 'jquery'
 
-var x = window.matchMedia("(min-width: 775px)")
-myFunction(x) // Call listener function at run time
-x.addListener(myFunction) // Attach listener function on state changes
+var x = window.matchMedia("(min-width: 1500px)")
+myFunction(x)
+x.addListener(myFunction)
 
 function myFunction(x) {
-  if (x.matches) { // If media query matches
+  if (x === "min-width: 1500px") {
     $(".menu").show();
     $(".searchInput").show();
   } else {
@@ -20,10 +20,13 @@ $(document).ready(function() {
   $(".search").click(function() {
     $(".searchInput").slideToggle("slow");
   });
+  $(".logo").click(function(){
+    $(".menu").slideToggle("slow");
+  })
 });
 
 var slideIndex = 1;
-showDivs(slideIndex);
+  showDivs(slideIndex);
 
 function plusDivs(n) {
   showDivs(slideIndex += n);
